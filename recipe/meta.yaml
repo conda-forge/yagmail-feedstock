@@ -19,6 +19,7 @@ build:
 requirements:
   host:
     - pip
+    - premailer
     - python
   run:
     - python
