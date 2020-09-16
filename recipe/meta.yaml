@@ -1,5 +1,5 @@
 {% set name = "yagmail" %}
-{% set version = "0.13.237" %}
+{% set version = "0.13.238" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4fa8d5b606e0dca68829cd8bcb79f7b5e8361259f65aab5b3fd7b330c4958029
+  sha256: 8bbc14f94fda84ea5a157f5e8eb8608f37eea698f8896255df082d161dc0e944
 
 build:
   number: 0
