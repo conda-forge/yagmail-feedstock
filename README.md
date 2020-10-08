@@ -5,11 +5,9 @@ Home: https://github.com/kootenpv/yagmail
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yagmail-feedstock/blob/master/LICENSE.txt)
 
 Summary: Yet Another GMAIL client
-
-
 
 Current build status
 ====================
