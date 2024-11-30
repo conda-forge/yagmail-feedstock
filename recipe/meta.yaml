@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 44e8d0cda4f63e22a14902cc9096d52197fd0ced023d50b0409325f401585296
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yagmail = yagmail.__main__:main
@@ -20,11 +20,13 @@ requirements:
   host:
     - pip
     - premailer
-    - python >=2.7
+    - python {{ python_min }}
   run:
-    - python >=2.7
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - yagmail
   commands:
