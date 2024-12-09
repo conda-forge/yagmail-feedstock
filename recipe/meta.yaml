@@ -21,6 +21,7 @@ requirements:
     - pip
     - premailer
     - python {{ python_min }}
+    - setuptools
   run:
     - python >={{ python_min }}
 
